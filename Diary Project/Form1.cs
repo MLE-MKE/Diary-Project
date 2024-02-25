@@ -51,26 +51,6 @@ namespace Diary_Project
         private void NewButton_Click(object sender, EventArgs e)
         {
 
-            // Check if the TextBox is empty
-            if (Journal.Text != "")
-            {
-                // Ask the user if they want to save the current entry
-                DialogResult result = MessageBox.Show("Do you want to save the current entry before starting a new one?", "Save Entry", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-
-                if (result == DialogResult.Yes)
-                {
-                    // Save the current entry
-                    SaveEntry();
-                }
-                else if (result == DialogResult.Cancel)
-                {
-                    // If the user cancels, return without clearing the TextBox
-                    return;
-                }
-            }
-
-            // Clear the TextBox to start a new diary entry
-            Journal.Clear();
         }
 
         private void SaveEntry()
@@ -100,6 +80,37 @@ namespace Diary_Project
 
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colorDialog1.Color;
+                this.ForeColor = colorDialog1.Color;
+            }
+        }
 
+        private void FontColorMenuItem_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog()== DialogResult.OK)
+            {
+                Journal.ForeColor = colorDialog1.Color;
+            }
+        }
+
+        private void FontStyleMenuItem_Click(object sender, EventArgs e)
+        {
+            if(fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Journal.Font = fontDialog1.Font;
+            }
+        }
+
+        private void textBoxColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Journal.BackColor = colorDialog1.Color;
+            }
+        }
     }
 }
