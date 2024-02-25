@@ -36,9 +36,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.styleOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BackgroundColorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBoxColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FontColorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FontStyleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,30 +94,30 @@
             // BackgroundColorMenuItem
             // 
             this.BackgroundColorMenuItem.Name = "BackgroundColorMenuItem";
-            this.BackgroundColorMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.BackgroundColorMenuItem.Size = new System.Drawing.Size(170, 22);
             this.BackgroundColorMenuItem.Text = "Background Color";
             this.BackgroundColorMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // textBoxColorToolStripMenuItem
+            // 
+            this.textBoxColorToolStripMenuItem.Name = "textBoxColorToolStripMenuItem";
+            this.textBoxColorToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.textBoxColorToolStripMenuItem.Text = "Text Box Color";
+            this.textBoxColorToolStripMenuItem.Click += new System.EventHandler(this.textBoxColorToolStripMenuItem_Click);
             // 
             // FontColorMenuItem
             // 
             this.FontColorMenuItem.Name = "FontColorMenuItem";
-            this.FontColorMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.FontColorMenuItem.Size = new System.Drawing.Size(170, 22);
             this.FontColorMenuItem.Text = "Font Color";
             this.FontColorMenuItem.Click += new System.EventHandler(this.FontColorMenuItem_Click);
             // 
             // FontStyleMenuItem
             // 
             this.FontStyleMenuItem.Name = "FontStyleMenuItem";
-            this.FontStyleMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.FontStyleMenuItem.Size = new System.Drawing.Size(170, 22);
             this.FontStyleMenuItem.Text = "Font Style";
             this.FontStyleMenuItem.Click += new System.EventHandler(this.FontStyleMenuItem_Click);
-            // 
-            // textBoxColorToolStripMenuItem
-            // 
-            this.textBoxColorToolStripMenuItem.Name = "textBoxColorToolStripMenuItem";
-            this.textBoxColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.textBoxColorToolStripMenuItem.Text = "Text Box Color";
-            this.textBoxColorToolStripMenuItem.Click += new System.EventHandler(this.textBoxColorToolStripMenuItem_Click);
             // 
             // Form1
             // 
